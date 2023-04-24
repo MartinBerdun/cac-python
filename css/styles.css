@@ -1,0 +1,142 @@
+.primerSeccion {
+  background-color: #C4DCE9;
+  background-image: linear-gradient(to bottom, white, #C4DCE9);
+  width: auto;
+}
+
+.encabezado {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado h1 {
+  color: #004E64;
+  font-size: 400%;
+  font-family: Cinzel;
+  margin-left: 20%;
+}
+
+.encabezado h2 {
+  font-family: Cinzel;
+}
+
+.logo {
+  width: auto;
+  padding: 30px 30px 30px 30px;
+
+}
+
+.oferta {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto-Regular;
+  font-size: 1.5rem;
+
+}
+
+.oferta div {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: heartBeat;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+/* menu que se encuentra arriba a la derecha */
+.menu {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+  display: inline;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  font-family: Roboto-Regular;
+}
+
+
+/* menu debajo del header */
+.menuPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menuprincipal {
+  padding: 20px;
+  text-align: center;
+}
+
+.menuprincipal li {
+  display: inline;
+  padding: 10px;
+  margin: 5px 5px 5px 5px;
+  border: 2px solid #A9D3FF;
+  /* transition: all 2s; */
+}
+
+.menuprincipal :hover {
+
+  border-radius: 5px;
+  /* border-top: none;
+  border-left: none; */
+  background-image: linear-gradient(to left, white, #C4DCE9);
+}
+
+
+footer {
+  background-color: #C4DCE9;
+  background-image: linear-gradient(to bottom, white, #C4DCE9);
+  font-family: Roboto-Regular;
+  display: grid;
+  grid-template-areas:
+      "pagos redes"
+      "derechos derechos";
+}
+
+.pagos {
+  grid-area: pagos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.derechos {
+  background-color: #EFE9EC;
+  width: 100%;
+  /* margin: 10px; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  grid-area: derechos;
+}
+
+.iconos img {
+  padding: 10px;
+}
+
+.iconos img:hover {
+  transform: scale(1.25) translatey(-20px);
+}
