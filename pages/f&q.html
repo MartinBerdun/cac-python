@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="">
-    <title>nombre del sitio</title>
+    <title>ModaClick</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -51,226 +51,132 @@
 
         <div>
             <p class="comprass">Compras</p>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Como comprar
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="lista">
-                                <p>Seguí los siguentes pasos para realizar tu compra:</p>
-
-                                <ol>
-                                    <li>Elige el producto que deseas comprar.</li>
-                                    <li>Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu
-                                        carrito y te llevará al mismo.</li>
-                                    <li>Puedes seguir agregando otros productos al carrito o sino haz clic en "Iniciar
-                                        Compra".</li>
-                                    <li>Completá tus datos de contacto y haz clic en "Continuar".</li>
-                                    <li>Ingresá la dirección a donde deseas recibir el producto. Luego haz clic en
-                                        "Continuar".</li>
-                                    <li>Seleccioná el método de envío que desees y haz clic en "Continuar"</li>
-                                    <li>Elige el medio de pago. </li>
-                                    <ul>
-                                        <li>Una vez que hayas elegido el medio de pago, haz clic en "Continuar".</li>
-                                    </ul>
-                                    <li>Finalmente en la página de Confirmación de compra puedes revisar toda la
-                                        información de la compra. Luego haz clic en "Continuar".</li>
-                                    <li>Después de confirmar la compra recibirás un correo de nuestra parte, ese no será
-                                        un comprobante de pago.</li>
-                                    <li>Una vez acreditado el pago, haremos el envío correspondiente de los productos
-                                        que hayas comprado.
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
+            <section class="acordeon">
+                <details>
+                    <summary>Como comprar</summary>
+                    <div class="lista">
+                        <p>Seguí los siguentes pasos para realizar tu compra:</p>
+                        <ol>
+                            <li>Elige el producto que deseas comprar.</li>
+                            <li>Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu
+                                carrito y te llevará al mismo.</li>
+                            <li>Puedes seguir agregando otros productos al carrito o sino haz clic en "Iniciar
+                                Compra".</li>
+                            <li>Completá tus datos de contacto y haz clic en "Continuar".</li>
+                            <li>Ingresá la dirección a donde deseas recibir el producto. Luego haz clic en
+                                "Continuar".</li>
+                            <li>Seleccioná el método de envío que desees y haz clic en "Continuar"</li>
+                            <li>Elige el medio de pago. </li>
+                            <ul>
+                                <li>Una vez que hayas elegido el medio de pago, haz clic en "Continuar".</li>
+                            </ul>
+                            <li>Finalmente en la página de Confirmación de compra puedes revisar toda la
+                                información de la compra. Luego haz clic en "Continuar".</li>
+                            <li>Después de confirmar la compra recibirás un correo de nuestra parte, ese no será
+                                un comprobante de pago.</li>
+                            <li>Una vez acreditado el pago, haremos el envío correspondiente de los productos
+                                que hayas comprado.
+                            </li>
+                        </ol>
                     </div>
-                </div>
+                </details>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Cambios
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Podes hacer cambios cuando quieras a partir del dia que recibas el
-                            pedido. Por cualquier motivo. Simplemente nos contactas y coordinamos el retiro, la
-                            entrega del nuevo artículo o bien la devolución del dinero.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            Cancelación de compra
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Para cancelar tu compra debes enviar un mail a
-                            (email) o escribinos por WhatsApp.</div>
-                    </div>
-                </div>
-            </div>
+                <details>
+                    <summary>Cambios</summary>
+                    <p class="acordeon-info">Podes hacer cambios cuando quieras a partir del dia que recibas el
+                    pedido. Por cualquier motivo. Simplemente nos contactas y coordinamos el retiro, la
+                    entrega del nuevo artículo o bien la devolución del dinero.</p>
+                </details>
+
+                <details>
+                    <summary>Cancelación de compra</summary>
+                    <p class="acordeon-info">Para cancelar tu compra debes enviar un mail a
+                    modaclick@gmail.com o escribinos por WhatsApp.</p>
+                </details>
+            </section>
         </div>
 
         <div>
             <p class="comprass">Pagos</p>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFive" aria-expanded="false"
-                            aria-controls="flush-collapseFive">
-                            Medios de pago disponibles
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <strong>Tarjeta de crédito:</strong> Aprovechá las cuotas sin interés vigentes. <br>
+            <section class="acordeon">
+                <details>
+                    <summary>Medios de pago</summary>
+                        <p class="acordeon-info"> <strong>Tarjeta de crédito:</strong> Aprovechá las cuotas sin interés vigentes. <br>
                             <strong>Mercado Pago:</strong> Aplican todas las promociones disponibles en Mercado Pago.
                             <br>
                             <strong>Efectivo:</strong> Podes abonar en cualquier sucursal de Rapipago, Pago Fácil o
                             Carga Virtual
                             seleccionando Mercado Pago y obetiendo el cupón de pago al finalizar la compra.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                            Cómo se si mi pago fue aprobado?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Una vez que tu pago fue acreditado recibirás un correo electrónico
-                            con la confirmación, luego de esto iniciaremos el proceso de facturación y despacho.</div>
-                    </div>
-                </div>
-            </div>
+                        </p>
+                </details>
+
+                <details>
+                    <summary>Cómo se si mi pago fue aprobado?</summary>
+                    <p class="acordeon-info">Una vez que tu pago fue acreditado recibirás un correo electrónico
+                        con la confirmación, luego de esto iniciaremos el proceso de facturación y despacho.</p>
+                </details>
+            </section>
         </div>
+
 
         <div>
             <p class="comprass">Envio y retiro de pedidos</p>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                            aria-controls="flush-collapseSeven">
-                            Cómo hago para seguir mi pedido?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
+            <section class="acordeon">
+                <details>
+                    <summary>Cómo hago para seguir mi pedido?</summary>
+                        <p class="acordeon-info">
                             Una vez que el pedido fue despachado por correo , recibirás un mail con el número de
-                            tracking de su pedido para poder seguirlo. Sino debes enviar un mail a (email) para conocer el estado de tu pedido.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingEight">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseEight" aria-expanded="false"
-                            aria-controls="flush-collapseEight">
-                            En que día y horario se entregan los pedidos?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseEight" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Las entregas de pedidos se realizan de lunes a viernes de 8:00 a
-                            20:00. No se entregan pedidos los días domingos ni feriados, ni los días de paro de
-                            transporte.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingNine">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseNine" aria-expanded="false"
-                            aria-controls="flush-collapseNine">
-                            Puede otra persona recibir mi pedido?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Sí, cualquier persona de mayor de edad puede recibir la mercadería
-                            siempre que se encuentre en el domicilio de entrega indicado.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                            Que pasa si no hay nadie para recibir mi pedido?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">La empresa de correos dejará un aviso de visita y volverá al día
-                            siguiente nuevamente. Si en la segunda visita que realiza la empresa de correos tampoco
-                            encuentra a ninguna persona en el domicilio indicado por el usuario, se procederá a dejar la
-                            mercadería en la sucursal de la empresa de correos más cercana al domicilio indicado. Por 5
-                            días la mercadería quedará en la sucursal de correos, cumplido este período de tiempo, si el
-                            cliente no pasó a retirarlo se devolverá la mercadería a nuestro depósito. En este caso, el
-                            comprador debe comunicarse con ATENCION AL CLIENTE, para coordinar una nueva entrega. La
-                            nueva entrega puede tener un costo adicional por reprocesamiento.</div>
-                    </div>
-                </div>
-            </div>
+                            tracking de su pedido para poder seguirlo. Sino debes enviar un mail a modaclick@gmail.com para conocer el estado de tu pedido. 
+                        </p>
+                </details>
+
+                <details>
+                    <summary>En que día y horario se entregan los pedidos?</summary>
+                    <p class="acordeon-info">Las entregas de pedidos se realizan de lunes a viernes de 8:00 a
+                        20:00. No se entregan pedidos los días domingos ni feriados, ni los días de paro de
+                        transporte.</p>
+                </details>
+
+                <details>
+                    <summary>Puede otra persona recibir mi pedido?</summary>
+                        <p class="acordeon-info">
+                            Sí, cualquier persona de mayor de edad puede recibir la mercadería
+                            siempre que se encuentre en el domicilio de entrega indicado. 
+                        </p>
+                </details>
+
+                <details>
+                    <summary>Que pasa si no hay nadie para recibir mi pedido?</summary>
+                    <p class="acordeon-info">La empresa de correos dejará un aviso de visita y volverá al día
+                        siguiente nuevamente. Si en la segunda visita que realiza la empresa de correos tampoco
+                        encuentra a ninguna persona en el domicilio indicado por el usuario, se procederá a dejar la
+                        mercadería en la sucursal de la empresa de correos más cercana al domicilio indicado. Por 5
+                        días la mercadería quedará en la sucursal de correos, cumplido este período de tiempo, si el
+                        cliente no pasó a retirarlo se devolverá la mercadería a nuestro depósito. En este caso, el
+                        comprador debe comunicarse con ATENCION AL CLIENTE, para coordinar una nueva entrega. La
+                        nueva entrega puede tener un costo adicional por reprocesamiento.</p>
+                </details>
+            </section>
         </div>
 
         <div>
             <p class="comprass">Atención al cliente</p>
+            <section class="acordeon">
+                <details>
+                    <summary>Horario de atención al cliente</summary>
+                        <p class="acordeon-info">El horario de Atención al cliente es de Lunes a Viernes de 8 a 17 hs.
 
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingEleven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseEleven" aria-expanded="false"
-                            aria-controls="flush-collapseEleven">
-                            Horario de atención al cliente
-                        </button>
-                    </h2>
-                    <div id="flush-collapseEleven" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            El horario de Atención al cliente es de Lunes a Viernes de 8 a 17 hs.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwelve">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwelve" aria-expanded="false"
-                            aria-controls="flush-collapseTwelve">
-                            Cómo hago para contactarme?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwelve" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Puedes contactarnos a través de la dirección de correo
-                            (email), por WhatsApp o por nuestras redes sociales.</div>
-                    </div>
-                </div>
-            </div>
+                        </p>
+                </details>
+
+                <details>
+                    <summary>Cómo hago para contactarme?</summary>
+                    <p class="acordeon-info">Puedes contactarnos a través de la dirección de correo
+                        (email), por WhatsApp o por nuestras redes sociales.</p>
+                </details>
+            </section>
         </div>
+
 
         <section>
             <h3>Promociones</h3>
@@ -362,7 +268,7 @@
 
         <div class="derechos">
             <h6>
-            Todos los derechos reservados.
+                ModaClick © 2023.Todos los derechos reservados.
             </h6>
         </div>
 

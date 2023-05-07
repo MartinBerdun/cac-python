@@ -8,6 +8,8 @@ a {
 text-decoration: none;
 }
 
+/* /////////////////////////// HEADER //////////////////////////////// */
+
 .primerSeccion {
     background-color: #e6bf65;
     width: auto;
@@ -110,7 +112,7 @@ text-decoration: none;
 
 
 
-/* -----------------------   FOOTER ------------------------- */
+/* ////////////////////////////////////   FOOTER ///////////////////////////////// */
 
 footer {
     height: auto;
@@ -186,6 +188,7 @@ footer .derechos {
     justify-content: center;
     grid-area: derechos;
 }
+/* ////////////////////////////// BOTON WPP //////////////////////////////////  */
 
 .whatsapp {
     position: relative;
@@ -201,12 +204,13 @@ footer .derechos {
 
 }
 
+/* /////////////////////////////   PROMOS  ///////////////////////////////////// */
 
 .comprass {
     display: flex;
     align-items: center;
     height: 60px;
-    background-color: #80d3f2;
+    background-color: #d19815;
     font-size: 150%;
     padding-left: 20px;
     margin-top: 40px;
@@ -243,6 +247,8 @@ footer .derechos {
     width: 50px;
 }
 
+/* /////////////////////////// CONTACTO //////////////////////////////// */
+
 .contacto {
     width: 100%;
     display: flex;
@@ -272,4 +278,35 @@ footer .derechos {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+/* /////////////////// ACORDEON /////////////////////////// */
+
+.acordeon{
+    width: 80%;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary{
+    background: #e5ba54;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+summary:hover{
+    background: #d19815;
+}
+
+.acordeon-info{
+    padding: 10px;
+    background: white;
+    color: rgb(61, 61, 61);
 }
