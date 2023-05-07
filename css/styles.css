@@ -1,142 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+}
+
 .primerSeccion {
-  background-color: #C4DCE9;
-  background-image: linear-gradient(to bottom, white, #C4DCE9);
-  width: auto;
+    background-color: #e6bf65;
+    width: auto;
 }
 
-.encabezado {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.primerSeccion .encabezado {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.encabezado h1 {
-  color: #004E64;
-  font-size: 400%;
-  font-family: Cinzel;
-  margin-left: 20%;
+.primerSeccion .encabezado h1 {
+    color: #292216;
+    font-size: 400%;
+    font-family: Cinzel;
+    margin-left: 20%;
 }
 
-.encabezado h2 {
-  font-family: Cinzel;
+.click {
+    font-style: italic;
 }
 
-.logo {
-  width: auto;
-  padding: 30px 30px 30px 30px;
-
+.primerSeccion .encabezado h2 {
+    font-family: Cinzel;
 }
 
-.oferta {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Roboto-Regular;
-  font-size: 1.5rem;
-
+.primerSeccion .logo {
+    width: auto;
+    padding: 30px 30px 30px 30px;
 }
 
-.oferta div {
-  display: inline-block;
-  margin: 0 0.5rem;
+.primerSeccion .oferta {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto-Regular;
+    font-size: 1.5rem;
+}
 
-  animation: heartBeat;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+.primerSeccion .oferta div {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: heartBeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}  
+
+.primerSeccion .menu {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.primerSeccion .menu li {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    font-family: Roboto-Regular;
+    color: #0b6aaa;
+}
+
+.primerSeccion .menu li a {
+    color: #0b6aaa;
+}
+
+.primerSeccion .menuPrincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.primerSeccion .menuPrincipal .menuprincipal {
+    padding: 20px;
+    text-align: center;
+}
+
+.primerSeccion .menuPrincipal .menuprincipal li {
+    display: inline;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    border: 2px solid #A9D3FF;
+}
+
+.primerSeccion .menuPrincipal .menuprincipal li a {
+    color: #0b6aaa;
+}
+
+.primerSeccion .menuPrincipal .menuprincipal :hover {
+    border-radius: 5px;
+    background-image: linear-gradient(to left, white, #C4DCE9);
 }
 
 
-/* menu que se encuentra arriba a la derecha */
-.menu {
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
-.menu li {
-  display: inline;
-  /* justify-content: center;
-  align-items: center; */
-  padding: 10px 10px 10px 10px;
-  margin: 10px 10px 10px 10px;
-  font-family: Roboto-Regular;
-}
-
-
-/* menu debajo del header */
-.menuPrincipal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.menuprincipal {
-  padding: 20px;
-  text-align: center;
-}
-
-.menuprincipal li {
-  display: inline;
-  padding: 10px;
-  margin: 5px 5px 5px 5px;
-  border: 2px solid #A9D3FF;
-  /* transition: all 2s; */
-}
-
-.menuprincipal :hover {
-
-  border-radius: 5px;
-  /* border-top: none;
-  border-left: none; */
-  background-image: linear-gradient(to left, white, #C4DCE9);
-}
-
+/* -----------------------   FOOTER ------------------------- */
 
 footer {
-  background-color: #C4DCE9;
-  background-image: linear-gradient(to bottom, white, #C4DCE9);
-  font-family: Roboto-Regular;
-  display: grid;
-  grid-template-areas:
-      "pagos redes"
-      "derechos derechos";
+    height: auto;
+    background-color: #e6bf65;
+    font-family: Roboto-Regular;
+    display: grid;
+    grid-template-areas: "pagos redes"
+                        "newslatter newslatter"
+                        "derechos derechos";
 }
 
-.pagos {
-  grid-area: pagos;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .pagos {
+    height: 130px;
+    grid-area: pagos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.redes {
-  grid-area: redes;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .pagos .iconoss {
+    padding: 20px;
 }
 
-.derechos {
-  background-color: #EFE9EC;
-  width: 100%;
-  /* margin: 10px; */
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  grid-area: derechos;
+footer .pagos .iconoss :hover {
+    transform: scale(1.25);
 }
 
-.iconos img {
-  padding: 10px;
+footer .redes {
+    height: 130px;
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.iconos img:hover {
-  transform: scale(1.25) translatey(-20px);
+footer .redes .iconos a {
+    padding: 10px;
+}
+
+footer .redes .iconos a :hover {
+    transform: scale(1.25);
+}
+
+footer .newslatter {
+    width: 100%;
+    height: 100px;
+    grid-area: newslatter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .newslatter .news,
+footer .newslatter .inputNews {
+    background-color: #80d3f2;
+    height: 50%;
+    margin-right: 5px;
+    border: 3px solid #80d3f2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer .newslatter h5 {
+    margin-right: 20px;
+}
+
+footer .derechos {
+    background-color: #EFE9EC;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    grid-area: derechos;
+}
+
+.whatsapp {
+    position: relative;
+}
+
+.boton {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50px;
+
 }
