@@ -13,7 +13,7 @@ text-decoration: none;
     width: auto;
 }
 
-.primerSeccion .encabezado {
+.encabezado {
     width: auto;
     height: auto;
     display: flex;
@@ -22,27 +22,27 @@ text-decoration: none;
     align-items: center;
 }
 
-.primerSeccion .encabezado h1 {
+.encabezado h1 {
     color: #292216;
     font-size: 400%;
     font-family: Cinzel;
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 
 .click {
     font-style: italic;
 }
 
-.primerSeccion .encabezado h2 {
+.encabezado h2 {
     font-family: Cinzel;
 }
 
-.primerSeccion .logo {
+.logo {
     width: auto;
     padding: 30px 30px 30px 30px;
 }
 
-.primerSeccion .oferta {
+.oferta {
     width: 100%;
     height: 50px;
     display: flex;
@@ -53,7 +53,7 @@ text-decoration: none;
     font-size: 1.5rem;
 }
 
-.primerSeccion .oferta div {
+.oferta div {
     display: inline-block;
     margin: 0 0.5rem;
     animation: heartBeat;
@@ -61,14 +61,14 @@ text-decoration: none;
     animation-iteration-count: infinite;
 }  
 
-.primerSeccion .menu {
+.menu {
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.primerSeccion .menu li {
+.menu li {
     display: inline;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
@@ -76,35 +76,36 @@ text-decoration: none;
     color: #0b6aaa;
 }
 
-.primerSeccion .menu li a {
+.menu li a {
     color: #0b6aaa;
 }
 
-.primerSeccion .menuPrincipal {
+.menuPrincipal {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.primerSeccion .menuPrincipal .menuprincipal {
+.menuprincipal {
     padding: 20px;
     text-align: center;
 }
 
-.primerSeccion .menuPrincipal .menuprincipal li {
+.menuprincipal li {
     display: inline;
     padding: 10px;
     margin: 5px 5px 5px 5px;
-    border: 2px solid #A9D3FF;
+    /* border: 2px solid #A9D3FF; */
 }
 
-.primerSeccion .menuPrincipal .menuprincipal li a {
+.menuprincipal li a {
     color: #0b6aaa;
 }
 
-.primerSeccion .menuPrincipal .menuprincipal :hover {
+.menuprincipal :hover {
     border-radius: 5px;
-    background-image: linear-gradient(to left, white, #C4DCE9);
+    background-color: #deae3c ;
+    /* background-image: linear-gradient(to left, white, #C4DCE9); */
 }
 
 
@@ -121,7 +122,7 @@ footer {
                         "derechos derechos";
 }
 
-footer .pagos {
+.pagos {
     height: 130px;
     grid-area: pagos;
     display: flex;
@@ -129,15 +130,15 @@ footer .pagos {
     align-items: center;
 }
 
-footer .pagos .iconoss {
+.iconoss {
     padding: 20px;
 }
 
-footer .pagos .iconoss :hover {
+.iconoss :hover {
     transform: scale(1.25);
 }
 
-footer .redes {
+.redes {
     height: 130px;
     grid-area: redes;
     display: flex;
@@ -145,15 +146,15 @@ footer .redes {
     align-items: center;
 }
 
-footer .redes .iconos a {
+.iconos a {
     padding: 10px;
 }
 
-footer .redes .iconos a :hover {
+.iconos a :hover {
     transform: scale(1.25);
 }
 
-footer .newslatter {
+.newslatter {
     width: 100%;
     height: 100px;
     grid-area: newslatter;
@@ -164,10 +165,10 @@ footer .newslatter {
 
 footer .newslatter .news,
 footer .newslatter .inputNews {
-    background-color: #80d3f2;
+    background-color: #e5ba54;
     height: 50%;
     margin-right: 5px;
-    border: 3px solid #80d3f2;
+    border: 3px solid #9f8247;
     border-radius: 5px;
     padding: 10px;
 }
@@ -198,4 +199,77 @@ footer .derechos {
     right: 40px;
     border-radius: 50px;
 
+}
+
+
+.comprass {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #80d3f2;
+    font-size: 150%;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.promos {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}  
+
+.promosBanco {
+    width: 16%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center;
+}
+
+.promos img {
+    margin-top: 20px;
+}
+
+.promos h4 {
+    margin-top: 30px;
+}
+
+.promos .promo3 {
+    width: 50px;
+}
+
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer {
+    width: 100%;
+}
+
+.btn {
+    background-color: #e5ba54;
+    margin: 2px;
+}
+
+.caja {
+    background-color: #e5ba54;
+}
+
+.terminos {
+    margin-top: 1%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
