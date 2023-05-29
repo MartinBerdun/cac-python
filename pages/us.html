@@ -10,19 +10,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-
+    <link sizes="32x32" rel="icon" href="../icons8-ecommerce-32.ico">
 </head>
 
 <body>
 
     <section class="primerSeccion">
         <nav class="menu">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li>Carrito</li>
-                <li>Guardado</li>
-                <li>Buscar</li>
-            </ul>
+            <div class="cart__icon__cont">
+                <div class="cont__icon__cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                      </svg>
+                </div>
+                  
+                <div class="count__products">
+                    <span id="counter__products">0</span>
+                </div>
+                <div class="cont__cart__products hidden__cart">
+                    <div class="row__product hidden">
+                        <div class="cart__product">
+                            <div class="info__cart__product">
+                                <span class="cart__product__store">1</span>
+                                <p class="cart__product__title">Producto 1</p>
+                                <span class="cart__product__price">$600</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="total__cart hidden">
+                        <h3>Total:</h3>
+                        <span class="total__pay">$400</span>
+                    </div>
+                    <p class="cart__empty">El carrito está vacío</p>
+                </div>
+            </div>
         </nav>
         <header class="encabezado">
 
@@ -38,7 +62,6 @@
         <nav class="menuPrincipal">
             <ul class="menuprincipal">
                 <li class="home"><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/products.html" >Productos</a></li>
                 <li> <a href="../pages/f&q.html" >Preguntas Frecuentes</a></li>
                 <li> <a href="../pages/us.html" >Quienes somos</a></li>
                 <li> <a href="../pages/contact.html" >Contacto</a></li>
@@ -47,32 +70,35 @@
     </section>
 
     <main class="texto container">
-        <h3>Quienes somos.</h3>
-
-
-
-        <p> ModaClick es una empresa dedicada a la moda masculina y femenina fundada en argentina en el año 2020. Comercializamos una amplia variedad de productos de primera marca asegurando asi la mejor calidad del mercado. Nace a partir de la idea de crear un espacio de moda inspirado en el día a día, tratando de estar presentes en cada uno de esos momentos importantes, brindando una variada oferta de marcas y modelos, para poder de esta menaera, combinarlas y crear un look urbano, canchero y confortable ante todo. Es por eso que nos gusta estar en sintonia con la tendencia del momento al igual que nuestros clientes! 
+        <h4 id="gradUs" class="us__titles">Sobre nosotros</h4>
+        
+        <p class="p__text"> ModaClick es una empresa dedicada a la moda masculina y femenina. Fundada en Argentina en el año 2020, nace a partir de la idea de crear un espacio de moda inspirado en el día a día. Tratando de estar presentes en cada uno de esos momentos importantes, brindando una variada oferta de marcas y modelos, para poder combinarlas y crear un look urbano, canchero y confortable ante todo. Comercializamos una amplia variedad de productos de calidad, asegurando así la mejor oferta del mercado.
+        </p>
         <p>
-            <h4>
+            <h4 id="gradUs" class="us__titles">
                 Misión
             </h4>
-            Ofrecer prendas de gran calidad a precios atractivos cumpliendo las demandas y expectativas de los clientes, ofreciendo una experiencia premium para poder así conquistarlos!
+            <p class="p__text">
+                Nuestra misión es ofrecer prendas de gran calidad a precios atractivos, cumpliendo las demandas y expectativas de los clientes y brindando una experiencia premium para quienes nos eligen.
+            </p>
         </p>
-
+        
         <p>
-            <h4>
+            <h4 id="gradUs" class="us__titles">
                 Visión
             </h4>
-            Ser la marca más prestigiosa del mercado liderando la comercialización de nuestros productos, desde una organización que crea un mejor día a día tanto para los clientes como para nuestros colaboradores.
+            <p class="p__text">
+                Ser la marca más prestigiosa del mercado, liderando la comercialización de nuestros productos desde una organización que crea un mejor día a día, tanto para los clientes como para nuestros colaboradores.
+            </p>
         </p>
 
         <p>
-            <h4>
+            <h4 id="gradUs" class="us__titles">
                 Nuestros valores
             </h4>
 
             <ul>
-                <li>Cliente siempre primero</li>
+                <li>Satisfacer al cliente</li>
                 <li>Confianza</li>
                 <li>Lealtad</li>
                 <li>Compromiso</li>
@@ -82,11 +108,15 @@
         </p>
 
         <p>
-            Esperemos que disfrutes de nuestros productos!</p>
+            ¡Esperemos que disfrutes de nuestros productos!</p>
 
-        <p>Gracias por tu atención y ante cualquier consulta o sugerencia no dudes en escribirnos!</p>
+        <p>¡Gracias por tu atención! ¡No dudes en escribirnos ante cualquier consulta o sugerencia!</p>
 
         <h2>ModaClick</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1266.194685074767!2d-58.44594326430142!3d-34.60155752502905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0eac8da47d%3A0xd9958864c8d40952!2sHidalgo%201787%2C%20C1414CAQ%20CABA!5e0!3m2!1ses!2sar!4v1685389180926!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div id="app"></div>
 
     </main>
 
@@ -102,7 +132,7 @@
 
 
         <div class="redes">
-            <h4>Seguinos en nuestras redes sociales!</h4>
+            <h4>¡Seguinos en nuestras redes sociales!</h4>
             <div class="iconos">
                 <a href="https://www.instagram.com" target="blank"> <img src="../img/instagram32px.png"
                         alt="instagram"></a>
@@ -113,7 +143,7 @@
 
         <div class="newslatter">
             <p>
-                <h5>Suscribite al newsletter! </h5>
+                <h5>¡Suscribite al newsletter! </h5>
             </p>
             <div><input class="inputNews" type="email" placeholder="Ingresa tu email">
                 <button class="news" type="submit"> Suscribir </button></div>
@@ -126,7 +156,7 @@
         </div>
         <div class="whatsapp">
             <a class="boton" href="https://www.whatsapp.com/?lang=es" >
-                <img src="/img/whatsapp (3).png" alt="wpp">
+                <img src="../img/whatsapp (3).png" alt="wpp">
             </a>
         </div>
 
@@ -137,7 +167,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/fetch.js"></script>
 </body>
 
 </html>

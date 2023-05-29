@@ -10,34 +10,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link sizes="32x32" rel="icon" href="../icons8-ecommerce-32.ico">
 </head>
 
 <body>
 
     <section class="primerSeccion">
         <nav class="menu">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li>Carrito</li>
-                <li>Guardado</li>
-                <li>Buscar</li>
-            </ul>
+            <div class="cart__icon__cont">
+                <div class="cont__icon__cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                      </svg>
+                </div>
+                  
+                <div class="count__products">
+                    <span id="counter__products">0</span>
+                </div>
+                <div class="cont__cart__products hidden__cart">
+                    <div class="row__product hidden">
+                        <div class="cart__product">
+                            <div class="info__cart__product">
+                                <span class="cart__product__store">1</span>
+                                <p class="cart__product__title">Producto 1</p>
+                                <span class="cart__product__price">$600</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="total__cart hidden">
+                        <h3>Total:</h3>
+                        <span class="total__pay">$400</span>
+                    </div>
+                    <p class="cart__empty">El carrito está vacío</p>
+                </div>
+            </div>
         </nav>
         <header class="encabezado">
 
             <a href="../index.html"><img class="logo" src="" alt=""></a>
             <div>
                 <p>
-                    <h1 id="titulo">Moda<span class="click">Click</span></h1>                </p>
-                <p>
-                    <h2>DESC</h2>
+                    <h1 id="titulo">Moda<span class="click">Click</span></h1>
                 </p>
             </div>
         </header>
         <nav class="menuPrincipal">
             <ul class="menuprincipal">
                 <li class="home"><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/products.html" >Productos</a></li>
                 <li> <a href="../pages/f&q.html" >Preguntas Frecuentes</a></li>
                 <li> <a href="../pages/us.html" >Quienes somos</a></li>
                 <li> <a href="../pages/contact.html" >Contacto</a></li>
@@ -46,7 +68,7 @@
     </section>  
 
     <main class="contacto container">
-        <h3>Contáctanos!</h3>
+        <h3 class="contact__us">¡Contactanos!</h3>
         <h4>Datos personales</h4>
         <form action="" method="get" id="formulario">
             <fieldset class="contacto1 " >
@@ -134,7 +156,7 @@
 
 
         <div class="redes">
-            <h4>Seguinos en nuestras redes sociales!</h4>
+            <h4>¡Seguinos en nuestras redes sociales!</h4>
             <div class="iconos">
                 <a href="https://www.instagram.com" target="blank"> <img src="../img/instagram32px.png"
                         alt="instagram"></a>
@@ -145,7 +167,7 @@
 
         <div class="newslatter">
             <p>
-                <h5>Suscribite al newsletter! </h5>
+                <h5>¡Suscribite al newsletter! </h5>
             </p>
             <div><input id="inputnew" class="inputNews" type="email" placeholder="Ingresá tu email">
                 <button class="news" type="submit"> Suscribir </button></div>
@@ -160,7 +182,7 @@
 
         <div class="whatsapp">
             <a class="boton" href="https://www.whatsapp.com/?lang=es" target="_blank">
-                <img src="/img/whatsapp (3).png" alt="wpp">
+                <img src="../img/whatsapp (3).png" alt="wpp">
             </a>
         </div>
     </footer>
@@ -172,6 +194,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="../scripts/cart.js"></script>
 </body>
 
 
