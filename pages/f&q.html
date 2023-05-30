@@ -10,18 +10,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link sizes="32x32" rel="icon" href="../icons8-ecommerce-32.ico">
 </head>
 
 <body>
 
     <section class="primerSeccion">
         <nav class="menu">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li>Carrito</li>
-                <li>Guardado</li>
-                <li>Buscar</li>
-            </ul>
+            <div class="cart__icon__cont">
+                <div class="cont__icon__cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                      </svg>
+                </div>
+                  
+                <div class="count__products">
+                    <span id="counter__products">0</span>
+                </div>
+                <div class="cont__cart__products hidden__cart">
+                    <div class="row__product hidden">
+                        <div class="cart__product">
+                            <div class="info__cart__product">
+                                <span class="cart__product__store">1</span>
+                                <p class="cart__product__title">Producto 1</p>
+                                <span class="cart__product__price">$600</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon__close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="total__cart hidden">
+                        <h3>Total:</h3>
+                        <span class="total__pay">$400</span>
+                    </div>
+                    <p class="cart__empty">El carrito está vacío</p>
+                </div>
+            </div>
         </nav>
         <header class="encabezado">
 
@@ -37,7 +62,6 @@
         <nav class="menuPrincipal">
             <ul class="menuprincipal">
                 <li class="home"><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/products.html" >Productos</a></li>
                 <li> <a href="../pages/f&q.html" >Preguntas Frecuentes</a></li>
                 <li> <a href="../pages/us.html" >Quienes somos</a></li>
                 <li> <a href="../pages/contact.html" >Contacto</a></li>
@@ -47,15 +71,14 @@
 
     <main class="container">
 
-        <h3>Preguntas Frecuentes</h3>
+        <h3 class="preguntas__promociones">Preguntas Frecuentes</h3>
 
         <div>
             <p class="comprass">Compras</p>
             <section class="acordeon">
                 <details>
-                    <summary>Como comprar</summary>
+                    <summary>Cómo comprar</summary>
                     <div class="lista">
-                        <p>Seguí los siguentes pasos para realizar tu compra:</p>
                         <ol>
                             <li>Elige el producto que deseas comprar.</li>
                             <li>Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu
@@ -91,7 +114,7 @@
                 <details>
                     <summary>Cancelación de compra</summary>
                     <p class="acordeon-info">Para cancelar tu compra debes enviar un mail a
-                    modaclick@gmail.com o escribinos por WhatsApp.</p>
+                    ventas@modaclick.com o escribinos por WhatsApp.</p>
                 </details>
             </section>
         </div>
@@ -111,7 +134,7 @@
                 </details>
 
                 <details>
-                    <summary>Cómo se si mi pago fue aprobado?</summary>
+                    <summary>¿Cómo sé si mi pago fue aprobado?</summary>
                     <p class="acordeon-info">Una vez que tu pago fue acreditado recibirás un correo electrónico
                         con la confirmación, luego de esto iniciaremos el proceso de facturación y despacho.</p>
                 </details>
@@ -123,7 +146,7 @@
             <p class="comprass">Envio y retiro de pedidos</p>
             <section class="acordeon">
                 <details>
-                    <summary>Cómo hago para seguir mi pedido?</summary>
+                    <summary>¿Cómo hago para seguir mi pedido?</summary>
                         <p class="acordeon-info">
                             Una vez que el pedido fue despachado por correo , recibirás un mail con el número de
                             tracking de su pedido para poder seguirlo. Sino debes enviar un mail a modaclick@gmail.com para conocer el estado de tu pedido. 
@@ -131,14 +154,14 @@
                 </details>
 
                 <details>
-                    <summary>En que día y horario se entregan los pedidos?</summary>
+                    <summary>¿En que día y horario se entregan los pedidos?</summary>
                     <p class="acordeon-info">Las entregas de pedidos se realizan de lunes a viernes de 8:00 a
                         20:00. No se entregan pedidos los días domingos ni feriados, ni los días de paro de
                         transporte.</p>
                 </details>
 
                 <details>
-                    <summary>Puede otra persona recibir mi pedido?</summary>
+                    <summary>¿Puede otra persona recibir mi pedido?</summary>
                         <p class="acordeon-info">
                             Sí, cualquier persona de mayor de edad puede recibir la mercadería
                             siempre que se encuentre en el domicilio de entrega indicado. 
@@ -146,7 +169,7 @@
                 </details>
 
                 <details>
-                    <summary>Que pasa si no hay nadie para recibir mi pedido?</summary>
+                    <summary>¿Qué pasa si no hay nadie para recibir mi pedido?</summary>
                     <p class="acordeon-info">La empresa de correos dejará un aviso de visita y volverá al día
                         siguiente nuevamente. Si en la segunda visita que realiza la empresa de correos tampoco
                         encuentra a ninguna persona en el domicilio indicado por el usuario, se procederá a dejar la
@@ -170,16 +193,16 @@
                 </details>
 
                 <details>
-                    <summary>Cómo hago para contactarme?</summary>
+                    <summary>¿Cómo hago para contactarme?</summary>
                     <p class="acordeon-info">Puedes contactarnos a través de la dirección de correo
-                        (email), por WhatsApp o por nuestras redes sociales.</p>
+                        soporte@modaclick.com, por WhatsApp o por nuestras redes sociales.</p>
                 </details>
             </section>
         </div>
 
 
         <section>
-            <h3>Promociones</h3>
+            <h3 class="preguntas__promociones">Promociones</h3>
 
             <div class="promos">
                 <div class="promosBanco">
@@ -218,12 +241,12 @@
                 </div>
 
                 <div class="container">
-                    <img src="/img/promo5.webp" alt="promos">
-                    <img src="/img/promo6.webp" alt="promos">
-                    <img src="/img/promo7.webp" alt="promos">
-                    <img src="/img/promo8.webp" alt="promos">
-                    <img src="/img/promo9.webp" alt="promos">
-                    <img src="/img/promo10.webp" alt="promos">
+                    <img src="../img/promo5.webp" alt="promos">
+                    <img src="../img/promo6.webp" alt="promos">
+                    <img src="../img/promo7.webp" alt="promos">
+                    <img src="../img/promo8.webp" alt="promos">
+                    <img src="../img/promo9.webp" alt="promos">
+                    <img src="../img/promo10.webp" alt="promos">
     
                 </div>
             </div>
@@ -247,7 +270,7 @@
 
 
         <div class="redes">
-            <h4>Seguinos en nuestras redes sociales!</h4>
+            <h4>¡Seguinos en nuestras redes sociales!</h4>
             <div class="iconos">
                 <a href="https://www.instagram.com" target="blank"> <img src="../img/instagram32px.png"
                         alt="instagram"></a>
@@ -258,7 +281,7 @@
 
         <div class="newslatter">
             <p>
-                <h5>Suscribite al newsletter! </h5>
+                <h5>¡Suscribite al newsletter! </h5>
             </p>
             <div><input class="inputNews" type="email" placeholder="Ingresá tu email">
                 <button class="news" type="submit"> Suscribir </button></div>
@@ -274,7 +297,7 @@
 
         <div class="whatsapp">
             <a class="boton" href="https://www.whatsapp.com/?lang=es" target="_blank">
-                <img src="/img/whatsapp (3).png" alt="wpp">
+                <img src="../img/whatsapp (3).png" alt="wpp">
             </a>
         </div>
     </footer>
@@ -283,6 +306,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="../scripts/cart.js"></script>
 
 </body>
 
