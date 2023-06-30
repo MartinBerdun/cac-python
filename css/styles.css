@@ -13,6 +13,7 @@ img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -38,17 +39,19 @@ text-decoration: none;
 .encabezado h1 {
     color: #292216;
     font-size: 400%;
-    font-family: Cinzel;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
     /* margin-left: 20%; */
 }
 
 .click {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 450;
 }
 
 .encabezado h2 {
-    font-family: Cinzel;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo {
@@ -293,6 +296,7 @@ body {
     background-color: none;
     transition: 0.2s all;
     opacity: 0.85;
+    cursor: pointer;
 }
 
 .button:active {
@@ -431,6 +435,10 @@ footer .newslatter h5 {
     margin-right: 20px;
 }
 
+footer .news:hover {
+    cursor: pointer;
+}
+
 footer .derechos {
     background-color: #EFE9EC;
     width: 100%;
@@ -515,6 +523,18 @@ footer .derechos {
 
   .p__text {
     padding-left: 15px;
+    margin: 10px;
+  }
+
+  .ul__us {
+    margin-top: 10px;
+    margin-left: 23px;
+    padding-left: 20px;
+  }
+
+  .p__text-2 {
+    margin-top: 10;
+    padding: 10px 10px;
   }
 
 /* /////////////////////////// CONTACTO //////////////////////////////// */
@@ -565,6 +585,10 @@ footer .derechos {
 }
 
 /* /////////////////// ACORDEON /////////////////////////// */
+
+.ol__faq {
+    padding: 10px 30px;
+}
 
 .preguntas__promociones {
     height: 70px;
